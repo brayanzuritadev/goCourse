@@ -34,4 +34,10 @@ func main() {
 	fmt.Println(numeros)
 	numeros[1] = 200
 	fmt.Println(subSlicen)
+
+	//caso interesante
+	numero := []int{}
+	fmt.Printf("%v %d %d %p\n", numero, cap(numero), len(numero), numero)
+	numero = append(numero, 10)
+	fmt.Println(numero, cap(numero), len(numero))
 }
